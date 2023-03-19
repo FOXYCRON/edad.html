@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Edad </title>
+
+<meta charset="UFT-8">
+
+</head>
+<body bgcolor = #283CD6>
+
+<h1> Edad </h1>
+
+<b>
+<br> Ingrese su nombre:
+ <input type=text id=n>
+<br> Ingrese año de nacimiento: <input type=text id=a>
+<b>
+<br>
+
+Edad:
+<input type=text id=r>
+<br>
+<input type=button value=confirmar onclick=MostrarEdad()>
+<br>
+<br>
+
+<script>
+ function MostrarEdad()
+
+{
+let fecha,f1,f2,edad;
+fecha=new Date();
+f1=document.getElementById("a").value;
+f2=fecha.getFullYear();
+edad=f2-f1;
+
+document.getElementById("r").value=edad;
+}
+</script>
+</body>
+</html>
